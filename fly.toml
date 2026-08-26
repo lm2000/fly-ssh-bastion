@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for nis-bastion-michael-884 on 2026-08-25T23:59:53-04:00
+# fly.toml app configuration file generated for nis-bastion-michael-884 on 2026-08-26T04:29:30Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -24,3 +24,6 @@ primary_region = 'ewr'
   cpu_kind = 'shared'
   cpus = 1
   memory_mb = 256
+
+[deploy]
+  strategy = 'immediate'
