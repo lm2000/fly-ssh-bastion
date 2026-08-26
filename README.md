@@ -10,3 +10,8 @@ This project does not deploy another Hermes Gateway.
 - The existing Hermes Cloud gateway opens a reverse tunnel to the bastion.
 - The operator connects through the bastion to the gateway over the reverse tunnel.
 - Password and root login are disabled; public-key authentication is required.
+
+## Deployment
+
+The Fly application is connected to this repository and deploys the `main` branch automatically.
+Public keys are supplied through the Fly secrets `OPERATOR_PUBLIC_KEY` and `GATEWAY_PUBLIC_KEY`; no private keys or credentials belong in this repository.
